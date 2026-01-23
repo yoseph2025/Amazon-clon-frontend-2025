@@ -1,9 +1,9 @@
 import React from "react";
-import RoutingN from "./Routing"; // Updated to match your RoutingN file
+import Routing from "./Routing"; // Updated to match your RoutingN file
 
 function App() {
   return (
-  <RoutingN />
+  <Routing />
 )
 }
 

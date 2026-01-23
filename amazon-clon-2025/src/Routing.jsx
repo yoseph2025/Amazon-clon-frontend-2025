@@ -1,4 +1,3 @@
-import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Landing from "./Pages/Landing/Landing";
 import Auth from "./Pages/Auth/Auth";
@@ -6,12 +5,11 @@ import Order from "./Pages/Orders/Order";
 import Cart from "./Pages/Cart/Cart";
 import Payment from "./Pages/Payment/Payment";
 import Results from "./Pages/Results/Results";
-import ProductDetail from "./Pages/ProductDetail/ProductDetail"
-// import CategoryN from "./Components/Category/CategoryN";
+import ProductDetail from "./Pages/ProductDetail/ProductDetail";
 
-const RoutingN = () => {
+const Routing = () => {
   return (
-    <Router>
+    <Router basename="/Amazon-clon-frontend-2025">
       <Routes>
         <Route path="/" element={<Landing />} />
         <Route path="/auth" element={<Auth />} />
@@ -25,4 +23,4 @@ const RoutingN = () => {
   );
 };
 
-export default RoutingN;
+export default Routing;
